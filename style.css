@@ -1,0 +1,350 @@
+/* <!-- ================================================ default ================================================--> */
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 750px;
+}
+
+main {
+    margin: auto;
+    max-width: 1080px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ font size ==============================================--> */
+
+.logo-font-size {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.h1-font-size{
+    font-size: 48px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.h2-font-size {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.h3-font-size {
+    font-size: 24px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.normal-font-size {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+.small-font-size {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 8px 0;
+    border: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d8d8d8;
+}
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ nav bar ================================================--> */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+}
+
+.nav-left-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+}
+
+.nav-right-side .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================= hero ==================================================--> */
+
+.hero-contrainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero-img-blog {
+    padding: 24px;
+    width: 60%;
+}
+
+.hero-content {
+    width: 40%;  
+}
+
+.hero-content h3{
+    padding: 24px 0; 
+}
+
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ============================================= information ===============================================--> */
+
+.information-contrainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.highlight-information {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    width: 60%;
+    cursor: pointer;
+}
+
+.highlight-information:hover {
+    background-color: #d8d8d8;
+}
+
+.highlight-information-img {
+    padding-bottom: 32px;
+}
+
+.highlight-information-title {
+    padding-bottom: 24px;
+}
+
+.highlight-information-description {
+    padding-bottom: 24px;
+}
+
+.other-information {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-left: 0.5px solid #d8d8d8;
+}
+
+.other-information-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: 0.5px solid #d8d8d8;
+    cursor: pointer;
+}
+
+.other-information-card:hover {
+    background-color: #d8d8d8;
+}
+
+.other-information-blog {
+    width: 35%;
+    padding: 16px;
+}
+
+.other-information-content {
+    width: 65%;
+}
+
+.other-information-content p{
+    padding: 8px 0;
+}
+
+.read-more {
+    color: #4d92e2;
+}
+
+/* <!-- =========================================================================================================--> */
+
+.courses-contrainer {
+    background-color: #eaebec;
+}
+
+.courses-title {
+    position: relative;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.courses-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 72px;
+    justify-content: center;
+    row-gap: 32px;
+    column-gap: 24px;
+    padding-bottom: 32px;
+}
+
+.courses-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.courses-card:hover {
+    background-color: #dadada;
+}
+
+.courses-blog {
+    height: auto;
+}
+
+.courses-content {
+    padding: 16px;
+    padding-bottom: 24px;
+}
+
+.courses-content p {
+    padding-top: 8px;
+}
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ thesis =================================================--> */
+
+.thesis-title {
+    position: relative;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.thesis-contrainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.highlight-thesis {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    padding-bottom: 32px;
+    width: 60%;
+
+}
+
+.highlight-thesis-video {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.highlight-thesis-title {
+    padding-bottom: 8px;
+}
+
+.highlight-thesis-description {
+    padding-bottom: 32px;
+}
+
+.other-thesis {
+    width: 40%;
+}
+
+.other-thesis-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.other-thesis-card:hover {
+    background-color: #d8d8d8;
+}
+
+.other-thesis-blog {
+    margin: 16px;
+    width: 35%;
+}
+
+.other-thesis-content {
+    width: 60%;
+}
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ footer =================================================--> */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-top: 0.5px solid #d8d8d8;
+}
+
+.footer-copyrighrs, .footer-name{
+    font-size: 12px;
+}
+
+
+.footer-other {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+/* <!-- =========================================================================================================--> */
