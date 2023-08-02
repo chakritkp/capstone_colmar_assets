@@ -9,11 +9,17 @@
 
 body {
     min-width: 750px;
+    background-color: #eaebec;
+}
+
+header {
+    background-color: #fff;
 }
 
 main {
     margin: auto;
     max-width: 1080px;
+    
 }
 
 .hidden {
@@ -83,7 +89,7 @@ button {
 }
 
 button:hover {
-    background-color: #d8d8d8;
+    background-color: #535353;
 }
 
 /* <!-- =========================================================================================================--> */
@@ -127,6 +133,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #d8d8d8;
 }
 
 .hero-img-blog {
@@ -135,7 +142,7 @@ nav {
 }
 
 .hero-content {
-    width: 40%;  
+    width: 35%;  
 }
 
 .hero-content h3{
@@ -215,10 +222,6 @@ nav {
 
 /* <!-- =========================================================================================================--> */
 
-.courses-contrainer {
-    background-color: #eaebec;
-}
-
 .courses-title {
     position: relative;
     text-align: center;
@@ -229,7 +232,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 72px;
+    margin: 0 72px;
     justify-content: center;
     row-gap: 32px;
     column-gap: 24px;
@@ -348,3 +351,236 @@ footer {
 }
 
 /* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ media query ================================================--> */
+@media screen and (max-width: 630px) {
+    
+    body {
+        margin: auto;
+        min-width: 0px;
+    }
+
+/* <!-- ================================================ nav bar ================================================--> */
+
+    nav {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+    .menu-name {
+        display: none;
+    }
+
+    .nav-right-side {
+        width: 100%;
+    }
+
+    .menu {
+        justify-content: space-around;
+    }
+
+    .logo-img {
+        display: none;
+    }
+
+    .width-hidden {
+        display: none;
+    }
+
+    .nav-right-side {
+        justify-content: space-around;
+    }
+
+/* <!-- =========================================================================================================--> */
+
+    .hero-contrainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-img-blog {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 32px 16px;
+        width: 100%;  
+    }
+
+    .hero-content h3{
+        padding: 0; 
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    button {
+        padding: 16px 0;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ============================================= information ===============================================--> */
+    
+    .information-contrainer {
+        flex-direction: column;
+    }
+
+    .highlight-information {
+        display: none;
+        padding: 32px 24px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .other-information {
+        width: 100%;
+        border-left: none;
+    }
+
+    .other-information-card {
+        flex-direction: column;
+        border: none;
+       padding: 16px;
+    }
+
+    .other-information-card {
+        background-color: #fff;
+    }
+
+    .other-information-blog {
+        width: 100%;
+        padding: 0;
+    }
+
+    .other-information-img {
+        display: none;
+    }
+
+    .other-information-content {
+        width: 100%;
+        padding: 16px;
+        padding-bottom: 32px;
+    }
+
+/* <!-- =========================================================================================================--> */
+
+    .courses-contrainer {
+        background-color: #fff;
+    }
+
+    .courses-title {
+        padding-bottom: 16px;
+    }
+
+    .courses-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        row-gap: 8px;
+        column-gap: 0px;
+        padding-bottom: 32px;
+    }
+
+    .courses-bar {
+        cursor: pointer;
+        width: 92%;
+        background-color: #dadada;
+    }
+
+    .courses-bar:hover {
+        background-color: #eeeeee;
+    }
+
+    .courses-bar-title {
+        padding: 16px;
+        padding-bottom: 24px;
+    }
+
+    .courses-card {
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        background-color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+ 
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ thesis =================================================--> */
+    
+    .thesis-title {
+        padding: 32px 0;
+        padding-bottom: 16px;
+    }
+
+    .thesis-contrainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-thesis {
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .highlight-thesis-video {
+        width: 100%;
+        padding-bottom: 24px;
+    }
+
+    .highlight-thesis-title {
+        display: none;
+        padding: 0 16px;
+        padding-bottom: 8px;
+    }
+
+    .highlight-thesis-description {
+        display: none;
+        padding: 0 16px;
+        padding-bottom: 32px;
+    }
+
+    .other-thesis {
+        display: none;
+        width: 100%;
+    }
+
+/* <!-- =========================================================================================================--> */
+
+/* <!-- ================================================ footer =================================================--> */
+
+    footer {
+        padding: 16px 24px;
+        border-top: none;
+    }
+
+    .footer-copyrighrs, .footer-name{
+        font-size: 12px;
+    }
+
+
+    .footer-other {
+        display: none;
+    }
+
+
+/* <!-- =========================================================================================================--> */
+
+}
